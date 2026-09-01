@@ -127,7 +127,17 @@ footer{margin-top:34px;border-top:1px solid #331111;padding:18px;text-align:cent
 .legal-box a{color:#ff6868}
 .legal-box .legal-note{border-left:3px solid #8f2020;padding-left:12px;color:#8f8f8f}
 .legal-box address{font-style:normal;color:#d6d6d6;line-height:1.75}
-@media(max-width:640px){.legal-box{padding:18px}}
+@media(max-width:640px){
+  html{scroll-padding-bottom:82px}
+  body{padding-bottom:66px}
+  .legal-wrap{display:block!important;width:calc(100% - 20px);margin:14px auto 24px;visibility:visible!important;opacity:1!important}
+  .legal-wrap>.legal-nav{position:sticky;bottom:8px;z-index:1000;margin:0 0 14px;padding:7px;gap:7px;background:rgba(5,3,3,.96);border:1px solid #5a1818;box-shadow:0 0 22px rgba(255,0,0,.22)}
+  .legal-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;color:#fff;border:1px solid #8f2020;background:#180505;font-size:11px;touch-action:manipulation}
+  .legal-box{display:block!important;visibility:visible!important;opacity:1!important;overflow:visible;padding:18px 14px;scroll-margin-top:16px}
+  .legal-box h2{font-size:22px}
+  .legal-box p,.legal-box li{font-size:14px;overflow-wrap:anywhere}
+  footer .legal-nav{margin-top:12px}
+}
 
 </style>
 </head>
